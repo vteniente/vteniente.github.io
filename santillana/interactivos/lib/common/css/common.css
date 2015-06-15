@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/* CSS Document */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+
+/* Clearfix hack Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+/* Main Content */
+.main {
+	max-width: 69em;
+}
+ 
+@font-face {
+    font-family: 'bryant-regular';
+    src: url('../font-kits/bryant-bold-webfont.eot');
+    src: url('../font-kits/bryant-bold-webfont.eot?#iefix') format('embedded-opentype'),
+url('../font-kits/bryant-bold-webfont.woff') format('woff'),
+url('../font-kits/bryant-bold-webfont.ttf') format('truetype'),
+url('../font-kits/bryant-bold-webfont.svg#bryantregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bryantbold_alternate';
+    src: url('../font-kits/bryant-boldalternate-webfont.eot');
+    src: url('../font-kits/bryant-boldalternate-webfont.eot?#iefix') format('embedded-opentype'),
+url('../font-kits/bryant-boldalternate-webfont.woff') format('woff'),
+url('../font-kits/bryant-boldalternate-webfont.ttf') format('truetype'),
+url('../font-kits/bryant-boldalternate-webfont.svg#bryantbold_alternate') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bryant-light';
+    src: url('../font-kits/bryant-light-webfont.eot');
+    src: url('../font-kits/bryant-light-webfont.eot?#iefix') format('embedded-opentype'),
+url('../font-kits/bryant-light-webfont.woff') format('woff'),
+url('../font-kits/bryant-light-webfont.ttf') format('truetype'),
+url('../font-kits/bryant-light-webfont.svg#bryantlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bryantlight_alternate';
+    src: url('../font-kits/bryant-lightalternate-webfont.eot');
+    src: url('../font-kits/bryant-lightalternate-webfont.eot?#iefix') format('embedded-opentype'),
+url('../font-kits/bryant-lightalternate-webfont.woff') format('woff'),
+url('../font-kits/bryant-lightalternate-webfont.ttf') format('truetype'),
+url('../font-kits/bryant-lightalternate-webfont.svg#bryantlight_alternate') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bryant-regular';
+    src: url('../font-kits/bryant-medium-webfont.eot');
+    src: url('../font-kits/bryant-medium-webfont.eot?#iefix') format('embedded-opentype'),
+url('../font-kits/bryant-medium-webfont.woff') format('woff'),
+url('../font-kits/bryant-medium-webfont.ttf') format('truetype'),
+url('../font-kits/bryant-medium-webfont.svg#bryantmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'bryant-regular-alternate';
+    src: url('../font-kits/bryant-mediumalternate-webfont.eot');
+    src: url('../font-kits/bryant-mediumalternate-webfont.eot?#iefix') format('embedded-opentype'),
+url('../font-kits/bryant-mediumalternate-webfont.woff') format('woff'),
+url('../font-kits/bryant-mediumalternate-webfont.ttf') format('truetype'),
+url('../font-kits/bryant-mediumalternate-webfont.svg#bryantmedium_alternate') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face { 
+    font-family: 'barthowheel-italic';
+    src: url('../font-kits/barthowheel-italic-webfont.eot');
+    src: url('../font-kits/barthowheel-italic-webfont.eot?#iefix') format('embedded-opentype'),
+url('../font-kits/barthowheel-italic-webfont.woff') format('woff'),
+url('../font-kits/barthowheel-italic-webfont.ttf') format('truetype'),
+url('../font-kits/barthowheel-italic-webfont.svg#barthowheelitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'barthowheel-regular';
+    src: url('../font-kits/barthowheel-regular-webfont.eot');
+    src: url('../font-kits/barthowheel-regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('../font-kits/barthowheel-regular-webfont.woff') format('woff'),
+url('../font-kits/barthowheel-regular-webfont.ttf') format('truetype'),
+url('../font-kits/barthowheel-regular-webfont.svg#barthowheelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+li{
+  list-style-type:none !important;  
+} 
+html{
+overflow:hidden !important;
+margin:0; 
+padding:0;  
+cursor: url(../img/cursors/default.svg) 35 25, url(../img/cursors/default.cur) 0 0, auto;
+
+
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+body{ 
+overflow: hidden !important;
+-webkit-overflow-scrolling: touch;
+cursor: url(../img/cursors/default.svg) 35 25, url(../img/cursors/default.cur) 0 0, auto;
+overflow:hidden !important;
+margin:0;
+padding:0;
+color:white;
+font-size: 2.15em; 
+  
+font-family:bryant-regular-alternate; 
+  font-size:24px;;
+  
+/* overflow:hidden; */ 
+  -webkit-user-select: none;  /* Chrome all / Safari all */ 
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+
+  -o-user-select: none;
+  user-select:none;
+
+}
+
+
+
+
+#preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#fff; /* change if the mask should have another color then white */
+    z-index:99; /* makes sure it stays on top */
+
+}
+
+#status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:50%; /* centers the loading animation horizontally one the screen */
+    top:50%; /* centers the loading animation vertically one the screen */
+    background-image:url(../img/status.gif); /* path to your loading animation */
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+.cursor_default{
+cursor: url(../img/cursors/default.svg) 35 25, url(../img/cursors/default.cur) 25 25, auto;
+
+} 
+
+
+.cursor_pointer{
+cursor: url(../img/cursors/pointer.svg) 35 25, url(../img/cursors/pointer.cur) 25 25, auto;
+
+} 
+
+.cursor_rotate{
+cursor: url(../img/cursors/rotate.svg) 35 25, url(../img/cursors/rotate.cur) 25 25, auto;
+
+}
+
+
+.cursor_not-allowed{
+cursor: url(../img/cursors/not-allowed.svg) 35 25, auto;
+
+}
+
+
+
+
+
+ .button, #buttonMenu{
+  display:block;
+  width:60px; 
+  height:60px;
+  border-radius:50%;
+  border:solid 6px; 
+	font-size: 2.15em;  
+  overflow: hidden;
+padding-left:auto;
+color:white;
+
+
+/* Internet Explorer 10 */
+display:-ms-flexbox;
+-ms-flex-pack:center;
+-ms-flex-align:center; 
+
+/* Firefox */
+display:-moz-box;
+-moz-box-pack:center;
+-moz-box-align:center;
+
+/* Safari, Opera, and Chrome */
+display:-webkit-box;
+-webkit-box-pack:center;
+-webkit-box-align:center;
+
+/* W3C */
+display:box;
+box-pack:center; 
+box-align:center;
+
+ 
+  box-shadow: 4px 8px 0px rgba(17, 17, 17, 0.38);
+
+  	
+}
+ 
+ .textButton{
+
+   width:auto;
+  height:60px;
+  border-radius: 28px;
+  border:solid 6px; 
+  
+
+   font-size: 33px;
+  overflow: hidden;
+padding-left:auto;
+
+
+/* Internet Explorer 10 */
+display:-ms-flexbox;
+-ms-flex-pack:center;
+-ms-flex-align:center;  å
+
+/* Firefox */
+display:-moz-box;
+-moz-box-pack:center;
+-moz-box-align:center;
+
+/* Safari, Opera, and Chrome */
+display:-webkit-box;
+
+  -webkit-box-pack:center;
+
+  -webkit-box-align:center;
+
+/* W3C */
+    display: inline-block;
+
+box-pack:center;
+box-align:center;
+font-family:bryant-regular-alternate; 
+  box-shadow: 4px 8px 0px rgba(17, 17, 17, 0.38); 
+  padding: .5% 1%;
+  margin: 1%;
+}
+
+ .cursor_drag{
+cursor: url(../img/cursors/drag.svg) 35 25, url(../img/cursors/drag.cur) 25 25, auto;
+
+}

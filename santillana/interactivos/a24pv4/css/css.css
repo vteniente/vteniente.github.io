@@ -1,0 +1,362 @@
+/*Tutorial*/
+.fichas2, .fichas3, .fichas4{
+	position: relative;
+	z-index: 1;
+}
+.fichas1 .ficha1{
+	background: url(../img/ficha1.png);
+	height: 92px;
+	width: 75px;
+	position: relative;
+	top: 151px;
+	left: 33px;
+}
+.fichas1 .ficha2{
+	background: url(../img/ficha1.png);
+	height: 92px;
+	width: 75px;
+	position: relative;
+	top: 236px;
+	left: 33px;
+}
+.jungla1 .jungla{
+	background: url(../img/pant1/jungla_pant1.png);
+	width: 260px;
+	height: 260px;
+	position: relative;
+	top: 98px;
+	left: 140px;
+}
+
+.avance1{
+	background: url(../img/pant1/avance_entrada/avance_entrada_00001.png);
+	height: 382px;
+	width: 352px;
+	position: relative;
+	top: -360px;
+	left: 420px;
+	border: solid yellow 1px;
+}
+.aripiensa{
+	background: url(../img/pant1/avance_calla.png);
+	height: 380px;
+	position: relative;
+	top: -380px;
+	z-index: -1;
+}
+.avanceFinal{
+	position: relative;
+	top: -760px;
+	height: 380px;
+	z-index: -1;
+}
+.mapButton{
+	background: url(../img/pant1/mapa_inicio.png);
+	height: 288px;
+	width: 445px;
+	position: relative;
+	top: -50px;
+	left: 190px;
+	z-index: -1;
+}
+.mapaDes{
+	position: relative;
+	top: -170px;
+	 left: 140px; 
+	z-index: -1;
+	background: url(../img/pant1/mapa_pant1.png);
+	height: 260px;
+	width: 260px;
+	border-radius: 20px;
+}
+.tutorial{
+	position: relative;
+	top: -450px;
+	z-index: 1;
+}
+/*Pantalla 2*/
+.fichas2 .ficha1{
+	background: url(../img/ficha2.png);
+	height: 79px;
+	width: 64px;
+	position: relative;
+}
+.fichas2 .ficha2{
+	background: url(../img/ficha2.png);
+	height: 79px;
+	width: 64px;
+	position: relative;
+}
+.fichas2 .ficha3{
+	background: url(../img/ficha2.png);
+	height: 79px;
+	width: 64px;
+	position: relative;
+}
+.mapa2 .mapaP{
+	background: url(../img/pant2/mapa_pant1.png);
+	position: relative;
+	height: 260px;
+	width: 260px;
+	top: -270px;
+	left: 140px;
+}
+.mapa2 .mapa{
+	position: relative;
+	top: -530px;
+	left: 140px;
+}
+.jungla2 .jungla{
+	background: url(../img/pant1/jungla_pant1.png);
+	width: 260px;
+	height: 260px;
+	position: relative;
+	top: 0;
+	left: 140px;
+}
+.avance2{
+	background: url(../img/pant1/avance_camina/avance_camina_00013.png);
+	height: 382px;
+	width: 352px;
+	position: relative;
+	top: -710px;
+	left: 420px;
+	border: solid yellow 1px;
+}
+.avance2 .avanceFinal{
+	position: relative;
+	top: -380px;
+	height: 380px;
+	z-index: -1;
+}
+.drop1, .drop2, .drop3{
+	height: 79px;
+	width: 64px;
+	position: relative;
+}
+/* Pantalla 3*/
+.fichas3{
+	height: 280px;
+}
+.fichas3 .ficha1{
+	background: url(../img/ficha3.png);
+	height: 59px;
+	width: 48px;
+	position: relative;
+}
+.fichas3 .ficha2{
+	background: url(../img/ficha3.png);
+	height: 59px;
+	width: 48px;
+	position: relative;
+}
+.fichas3 .ficha3{
+	background: url(../img/ficha3.png);
+	height: 59px;
+	width: 48px;
+	position: relative;
+}
+.fichas3 .ficha4{
+	background: url(../img/ficha3.png);
+	height: 59px;
+	width: 48px;
+	position: relative;
+}
+.fichas3 .ficha5{
+	background: url(../img/ficha3.png);
+	height: 59px;
+	width: 48px;
+	position: relative;
+}
+.mapa3 .mapaP{
+	background: url(../img/pant2/mapa_pant2.png);
+	position: relative;
+	height: 260px;
+	width: 260px;
+	top: -270px;
+	left: 140px;
+}
+.mapa3 .mapa{
+	position: relative;
+	top: -530px;
+	left: 140px;
+}
+.jungla3 .jungla{
+	background: url(../img/pant2/jungla_pant2.png);
+	width: 260px;
+	height: 260px;
+	position: relative;
+	top: -9px;
+	left: 140px;
+}
+.avance3{
+	background: url(../img/pant2/avance_camina/avance_camina_00013.png);
+	height: 382px;
+	width: 352px;
+	position: relative;
+	top: -755px;
+	left: 420px;
+	border: solid yellow 1px;
+}
+.avance3 .avanceFinal{
+	position: relative;
+	top: -380px;
+	height: 380px;
+	z-index: 1;
+}
+.drop2{
+	height: 60px;
+	width: 48px;
+	position: relative;
+}
+/*pantalla 4*/
+.fichas4{
+	height: 280px;
+}
+.fichas4 .ficha1{
+	background: url(../img/ficha4.png);
+	height: 48px;
+	width: 39px;
+	position: relative;
+}
+.fichas4 .ficha2{
+	background: url(../img/ficha4.png);
+	height: 48px;
+	width: 39px;
+	position: relative;
+}
+.fichas4 .ficha3{
+	background: url(../img/ficha4.png);
+	height: 48px;
+	width: 39px;
+	position: relative;
+}
+.fichas4 .ficha4{
+	background: url(../img/ficha4.png);
+	height: 48px;
+	width: 39px;
+	position: relative;
+}
+.fichas4 .ficha5{
+	background: url(../img/ficha4.png);
+	height: 48px;
+	width: 39px;
+	position: relative;
+}
+.fichas4 .ficha6{
+	background: url(../img/ficha4.png);
+	height: 48px;
+	width: 39px;
+	position: relative;
+}
+.fichas4 .ficha7{
+	background: url(../img/ficha4.png);
+	height: 48px;
+	width: 39px;
+	position: relative;
+}
+.mapa4 .mapaP{
+	background: url(../img/pant3/mapa_pant3.png);
+	position: relative;
+	height: 260px;
+	width: 260px;
+	top: -270px;
+	left: 140px;
+}
+.mapa4 .mapa{
+	position: relative;
+	top: -530px;
+	left: 140px;
+}
+.jungla4 .jungla{
+	background: url(../img/pant3/jungla_pant3.png);
+	width: 260px;
+	height: 260px;
+	position: relative;
+	top: 0;
+	left: 140px;
+}
+.avance4{
+	background: url(../img/pant3/avance_camina/avance_camina_00013.png);
+	height: 382px;
+	width: 352px;
+	position: relative;
+	top: -755px;
+	left: 420px;
+	border: solid yellow 1px;
+}
+.avance4 .avanceFinal{
+	position: relative;
+	top: -380px;
+	height: 380px;
+	z-index: 1;
+}
+.drop3{
+	height: 48px;
+	width: 39px;
+	position: relative;
+}
+/*commons*/
+span.drag.ui-draggable {
+    height: 79px;
+    width: 64px;
+    display: block;
+}
+#scene li:nth-child(1) img{
+	position:absolute;
+	top: -10px;
+	left: -60px !important;
+}
+#scene li:nth-child(2){
+	position:absolute;
+	display:block;
+	top: 0px !important;
+	left: -140px !important;
+	width: 314px;  
+	height: 210px;
+} 
+#scene li:nth-child(3){ 
+	position:absolute;
+	display:block; 
+	left: -41px !important;
+	top: 40px !important;  
+	width: 214px;
+	height: 210px; 
+
+}
+#scene li:nth-child(4){
+    width: 304px;
+	height: 190px;
+	position:absolute;
+	display:block;
+	left: 280px !important; 
+	top: 100px !important;
+}
+#scene li:nth-child(5){
+    width: 304px;
+	height: 190px;
+	position:absolute;
+	display:block;
+	left: -18px !important; 
+	top: -10px !important;
+}
+#scene li:nth-child(6){
+    width: 304px;
+	height: 190px;
+	position:absolute;
+	display:block;
+	left: -118px!important;
+	top: -40px !important;
+}
+#page-2 section:nth-child(1){ 
+	background:url(../img/back.jpg);
+}
+#page-2 section:nth-child(2){
+	background:url(../img/back.jpg);
+}
+#page-2 section:nth-child(3){
+	background:url(../img/back.jpg);
+}
+#page-2 section:nth-child(4){
+	background:url(../img/back.jpg);
+}

@@ -1,0 +1,336 @@
+.unstyled-list {
+  list-style-type: none;
+  padding: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin-top: 0px;
+}
+body {
+  font-family: "Lato", "Helvetica Neue", sans-serif;
+}
+.avatar {
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  border: 10px solid rgb(228, 109, 52);
+}
+header {
+    color: white;
+  text-shadow: black 0px 0px 3px;
+  position: relative;
+  background: #3499b8;
+  background-attachment: fixed;
+  background-image: url('images/bg.svg');
+  background-position: center center;
+  background-repeat: repeat;
+  overflow: hidden;
+  padding: 4em 0 3em 0;
+}
+.container{
+  padding-bottom: 40px;
+}
+header h1 {
+  font-weight: 900;
+}
+header h2 {
+  font-size: 28px;
+}
+header ul {
+  list-style-type: none;
+  padding: 0px;
+}
+header li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 18px;
+}
+header li i.fa.fa-envelope {
+  font-size: 85%;
+}
+header a,
+header a:hover,
+header a:active,
+header a:focus {
+  color: white;
+  text-decoration: none;
+}
+a{
+  color: #3499b8 !important;
+}
+header > .container {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+header .circle-icon {
+  background-color: #E46D34;
+}
+.circle-icon {
+  box-sizing: content-box;
+  border-radius: 50%;
+  text-align: center;
+  text-shadow: none;
+  margin-right: 6px;
+  color: white;
+}
+.circle-icon.circle-xsmall {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+}
+.circle-icon.circle-small {
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+}
+.circle-icon.circle-medium {
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+}
+.circle-icon.circle-transparent {
+  background-color: rgb(228, 109, 52);
+  opacity: 0.5;
+  border: 1px solid rgba(232, 43, 165, 0);
+  /* text-shadow: inherit; */
+  /* font-weight: bold; */
+  color: #fff;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  line-height: 41px;
+  -webkit-transition: background-color 1000ms linear;
+  -moz-transition: background-color 1000ms linear;
+  -o-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+  -webkit-transition: border 500ms linear;
+  -moz-transition: border 500ms linear;
+  -o-transition: border 500ms linear;
+  -ms-transition: border 500ms linear;
+  transition: border 500ms linear;
+}
+.circle-icon.circle-transparent:hover{
+    opacity: 1;
+
+  -webkit-transition: opacity 1000ms linear;
+  -moz-transition: opacity 1000ms linear;
+  -o-transition: opacity 1000ms linear;
+  -ms-transition: opacity 1000ms linear;
+  transition: opacity 1000ms linear;
+  -webkit-transition: border 500ms linear;
+  -moz-transition: border 500ms linear;
+  -o-transition: border 500ms linear;
+  -ms-transition: border 500ms linear;
+  transition: border 500ms linear;
+  border: 1px solid rgba(232, 43, 165, 1);
+}
+.period {
+  font-weight: 700;
+  font-size: 24px;
+  color: #bdc3c7;
+  line-height: 1.1;
+}
+.label.label-current {
+  font-size: 14px;
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
+  font-weight: normal;
+}
+#personal-description .col-desc{
+  margin-left: 0px;
+  margin:0 auto;
+  width: 80%;
+  float: none;
+}
+#personal-description p{
+  font-size: 16px;
+  text-align: justify;
+}
+#image-attribution a{
+  color: #fff !important;
+}
+#personal-description,
+#professional-experience,
+#academic-background,
+#complementary-info {
+  margin-top: 60px;
+}
+#professional-experience h2 i,
+#academic-background h2 i,
+#complementary-info h2 i {
+  position: relative;
+  top: -0.2em;
+}
+#professional-experience h2 i.fa-wrench,
+#academic-background h2 i.fa-wrench,
+#complementary-info h2 i.fa-wrench {
+  font-size: 85%;
+}
+#professional-experience h2 .circle-icon,
+#academic-background h2 .circle-icon,
+#complementary-info h2 .circle-icon {
+  background-color: rgb(228, 109, 52);
+}
+.section-title i.circle-icon {
+  font-size: 0.7em;
+}
+#skills,
+#technologies,
+#languages {
+  margin-bottom: 30px;
+}
+#skills ul,
+#technologies ul,
+#languages ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+#personal-info h2,
+#personal-info ul {
+  margin-top: 20px;
+}
+#personal-info h2 a{
+  color: #fff !important;
+}
+.job,
+.level {
+  margin-bottom: 30px;
+}
+.job.last-child,
+.level.last-child {
+  margin-bottom: 0px;
+}
+.label-native,
+.label-expert,
+.label-advanced,
+.label-intermediate,
+.label-basic {
+  border: 1px solid;
+  background-color: white;
+}
+.label-native {
+  border-color: #34495e;
+  color: #34495e;
+}
+.label-expert {
+  border-color: #2980b9;
+  color: #2980b9;
+}
+.label-advanced {
+  border-color: #3498db;
+  color: #3498db;
+}
+.label-intermediate {
+  border-color: #1abc9c;
+  color: #1abc9c;
+}
+.label-basic {
+  border-color: #2ecc71;
+  color: #2ecc71;
+}
+@media (max-width: 767px) {
+  #personal-description .col-desc{
+    width: 100%;
+  }
+  .period {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) {
+  #professional-experience h2,
+  #academic-background h2,
+  #complementary-info h2 {
+    margin-bottom: 30px;
+  }
+  #complementary-info #projects h2{
+    margin-bottom: 0px !important;
+  }
+  #professional-experience h2 i,
+  #academic-background h2 i,
+  #complementary-info h2 i {
+    position: absolute;
+    left: -60px;
+  }
+  .period,
+  .subtitle {
+    text-align: right;
+  }
+}
+@media (max-width: 991px) {
+  header li {
+    margin-bottom: 15px;
+  }
+  #avatar-container {
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 992px) {
+  header {
+    text-align: left;
+  }
+  header > .container {
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
+  #avatar-container {
+    text-align: right;
+  }
+}
+#actions,
+#image-attribution {
+  position: absolute;
+}
+#actions {
+  top: 15px;
+  right: 15px;
+}
+#image-attribution {
+  bottom: 15px;
+  right: 15px;
+}
+.fa-heart {
+  font-size: 20px; 
+}
+#projects ul {
+  margin: 0px 0px 0px;
+  padding: 0px;
+}
+
+.project_list{
+  float: left;
+  margin:  10px ;
+  list-style-type: none;
+}
+.project_list p{
+  margin: 5px 0; 
+}
+.project_list .name{
+  font-size: 16px;
+  font-weight: bold;
+}
+.project_list a:hover{
+  color: rgb(228, 109, 52) !important;
+  text-decoration: none;
+}
+.project_stack {
+  color: #333 !important;
+  font-size: 16px;
+}
+.project_stack span{
+  color: rgb(228, 109, 52);
+}
+.project_list img{
+  width: 300px;
+  height: 200px;
+}
+#complementary-info h2:last-child{
+  margin-bottom: 10px !important;
+}
+/*# sourceMappingURL=app.css.map */

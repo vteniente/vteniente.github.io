@@ -1,0 +1,124 @@
+{
+  "personalInfo": {
+    "fullName": "Víctor Teniente",
+    "email": "victor.teniente@gmail.com",
+    "avatarUrl": "https://pbs.twimg.com/profile_images/494185966861430785/uKVoP_Su.jpeg",
+    "ocupation": "Frontend developer, Musician & Songwriter"
+  },
+  "social": {
+    "github": "vteniente",
+    "linkedIn": "https://mx.linkedin.com/pub/víctor-teniente/aa/b6/225"
+  },
+  "academic": [
+    {
+      "start": "2009-01-01",
+      "end": "2014-09-01",
+      "school": {
+        "name": "Escuela Superior de Cómputo",
+        "url": "http://www.isc.escom.ipn.mx/"
+      },
+      "degree": "Computing Systems in Engineering",
+      "location": "Mexico City"
+    }
+  ],
+  "experience": [
+    {
+      "start": "2015-05-04",
+      "end": null,
+      "isCurrent": true,
+      "company": {
+        "name": "iPuntoWeb",
+        "url": "http://klings.club/site/index.php",
+        "linkedInUrl": ""
+      },
+      "position": "Frontend Developer",
+      "location": "Mexico City, Mexico",
+      "description": ""
+    },
+    {
+      "start": "2014-08-01", 
+      "end": null,
+      "isCurrent": true, 
+      "company":{
+        "name": "Editorial Santillana", 
+        "url": "https://www.santillana.com.mx/",
+        "linkedInUrl": ""
+      },
+      "position": "Frontend Developer [freelance]", 
+      "location": "Mexico City, Mexico", 
+      "description": ""
+    },
+    {
+      "start": "2013-07-08",
+      "end": "2015-04-30",
+      "isCurrent": false,
+      "company": {
+        "name": "Grupo Televisa",
+        "url": "http://noticieros.televisa.com",
+        "linkedInUrl": ""
+      },
+      "position": "Frontend & Backend Developer",
+      "location": "Mexico City, Mexico",
+      "description": ""
+    }, 
+    {
+      "start": "2012-09-17", 
+      "end": "2013-07-05",
+      "isCurrent": false, 
+      "company":{
+        "name": "Intercam Servicios Financieros", 
+        "url": "http://www.intercam.com.mx/",
+        "linkedInUrl": ""
+      },
+      "position": "Help desk", 
+      "location": "Mexico City, Mexico", 
+      "description": ""
+    }
+  ],
+  "technologies": [
+    {
+      "name": "HTML5"
+    },
+    {
+      "name": "JavaScript ( jQuery Angular.js, node.js)"
+    },
+    {
+      "name": "JSP"
+    },
+    {
+      "name": "JSTL"
+    },
+    {
+      "name": "CSS3 (Sass, Compass, Bootstrap)"
+    },  
+    {
+      "name": "Git, SVN"
+    },
+    {
+      "name": "PhoneGap/Cordova"
+    },
+    {
+      "name": "PHP (WordPress, Drupal)"
+    }
+  ], 
+  "projects":[
+    {
+      "name": "Noticieros Televisa",
+      "url": "http://noticieros.televisa.com",
+      "img": "css/images/noticieros.png",
+      "stack": "JavaScript, HTML5, JSP, CSS3, JSTL"
+    },
+    {
+      "name": "Televisa Deportes",
+      "url": "http://deportes.televisa.com",
+      "img": "css/images/deportes.png",
+      "stack": "Java, JSP, JSTL, JavaScript, HTML5, CSS3 "
+    },
+    {
+      "name": "Editorial Santillana",
+      "url": "santillana/",
+      "img": "css/images/santillana.png",
+      "stack": "HTML5, CSS3, JavaScript, jQuery"
+    }
+  ]
+}

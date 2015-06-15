@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="../lib/common/js/jquery-2.1.0.min.js"></script>
+<script src="../lib/common/js/persist.js"></script><!-- Esta librería gestiona localstorage, y cookies cuando no haya soporte de ls -->
+<title></title>
+<script src="config.js"></script><!-- En este archivo se inicializan variables con los datos del interactivo, como título y clave, favor de poner los valores que vengan en el guion -->
+<link rel="stylesheet" href="../lib/resources/css/core.css" type="text/css"/>
+<link rel="stylesheet" href="../lib/common/css/common.css" type="text/css"/>
+<!-- core y common dan el estilo de la interfaz, FAVOR DE NO EDITAR -->
+
+<script type="text/javascript">
+    var scale = 1 / window.devicePixelRatio;
+var viewportTag = "<meta id=\"meta1\" name=\"viewport\" content=\"width=device-width, height=device-height, initial-scale=" + scale + ", maximum-scale=1, user-scalable=no\"/>";
+document.write(viewportTag);
+$(window).load(function() {
+    $('#status').fadeOut();
+    $('#preloader').delay(350).fadeOut('slow');
+    $('body').delay(350).css({
+        'overflow': 'visible'
+    });
+})
+</script>
+<link rel="stylesheet" href="../lib/common/css/icons.css" type="text/css"/> <!-- Este archIvo contiene las clases para los íconos de los botones  FAVOR DE NO EDITAR-->
+<script src="../lib/common/js/jquery-ui-1.10.4.min.js"></script>
+<script src="../lib/resources/js/jquery.ui.touch-punch.min.js"></script> <!-- Permite que los eventos de arrastre de jquery ui sean compatibles con dispositivos móviles -->
+<script src="../lib/common/js/jquery.velocity.min.js"></script> <!-- sobreescribe la funcion animate() de jquery, mejorando su rendimiento -->
+<script src="../lib/common/js/pointer_events_polyfill.js"></script>
+<script src="../lib/common/js/buzz.min.js"></script> <!-- librería pra gestionar los sonidos -->
+<script src="../lib/common/js/common.js"></script> <!-- configura algunas cosas de la interfaz  FAVOR DE NO EDITAR -->
+<script src="../lib/common/js/jquery.widowFix-1.3.2.min.js"></script> <!-- arregla automáticamente viudas -->
+<link rel="stylesheet" type="text/css" href="../lib/common/css/normalize.css"/>
+<link rel="stylesheet" type="text/css" href="../lib/common/css/component.css"/>
+<link rel="stylesheet" type="text/css" href="../lib/common/css/_default.css"/>
+<link rel="stylesheet" type="text/css" href="../lib/common/css/_component.css"/> <!-- todas estas librerías son para las ventanas emergentes -->
+<script src="../lib/common/js/snap.svg-min.js"></script>
+
+
+<!--//////////////////-->
+<!-- USAR ESTA HOJA PARA COLOCAR LOS ESTILOS ESPECÍFICOS DEL INTERACTIVO A DESARROLLAR, PUEDEN AGREGARSE MÁS CSS'S SI HACE FALTA -->
+<link rel="stylesheet" type="text/css" href="css/css.css"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body onload="load_data()"> 
+<!-- PRECARGA-->
+<div id="preloader">
+  <div id="status">
+    &nbsp;
+  </div>
+   ab
+</div>
+<!-- CONTENEDOR DEL TÍTULO EN PANTALLA INTERIOR (#PAGE 2)-->
+<div id="allPageWrap">
+</div>
+<!-- allPageWrap-->
+<div class="pagewrap" id="wrapper">
+  <a class="pageload-link" href="#page-2" id="navTab"><img></a>
+  <!-- PORTADA  ('#page-1')-->
+  <div class="container show" id="page-1">
+    <h1 id="coverTitle"></h1>
+    <div id="afterTitle">
+    </div>
+    <!-- Cargar imágenes  para el intro, configurar nivel de profundidad -->
+    <ul id="scene" class="scene" href="#page-1">
+      <li class="layer" data-depth=".20"><img src="splash/layer1.jpg"></li>
+      <li class="layer" data-depth=".60"><img src="splash/layer2.png"></li>
+      <li class="layer" data-depth=".70"><img src="splash/layer3.png"></li>
+      <li class="layer" data-depth="1.20"><img src="splash/layer4.png"></li>
+      <li class="layer" data-depth="1.30"><img src="splash/layer5.png"></li>
+      <li class="layer" data-depth="1.45"><img src="splash/layer6.png"></li>
+    </ul>
+    <a id="start" class="textButton pageload-link"> Comenzar</a>
+  </div>
+  <!-- / termina PORTADA-->
+
+  <!-- REALIMENTACIONES-->
+
+
+
+      <div id="star">
+          <img id="star_circle" src="star-circle.jpg"> 
+          <img src="../lib/common/img/star.svg" id="star_img">
+          <div id="final-overlay"></div>
+        </div>
+
+  <div class="md-modal md-effect-4" id="modal-1">
+    <div class="md-content">
+      <h3>¡Buen trabajo!</h3>
+      <div>
+        <p>
+     Has abierto una ventana de realimentación.
+        </p>
+        <button class="md-close button icon-close"></button>
+      </div>
+    </div>
+  </div>
+  <!-- TERMINA CAJA DE REALIMENTACIONES-->
+
+  <div class="md-overlay"></div> <!-- div que  hace la veladura de als realimentaciones -->
+
+  <!-- ÁCTIVIDAD  ('#page-2')-->
+  <div class="container" id="page-2"> <!-- todo el contenido  de sections container es solo para ejemplificar, borrar todo lo que haya dentro de section -->
+    <div id="sectionsContainer">
+      <!-- PANTALLA 1 -->
+      <section>
+          <div class="fichas1">
+              <div class="ficha1"></div>
+              <div class="ficha2"></div>
+          </div>
+          <div class="mapa1" style="height: 0;">
+              <div class="mapButton"></div>
+              <div class="mapaDes"></div>
+              <div class="tutorial"></div>
+          </div>
+          <div class="jungla1">
+              <div class="jungla"></div>
+          </div>
+          <div class="avance1">
+            <div class="avance"></div>
+            <div class="aripiensa"></div>
+            <div class="avanceFinal"></div>
+          </div>
+      </section>
+      <!-- PANTALLA 2 -->
+      <section style="background-color: rgb(92, 103, 182)">
+          <div class="fichas2" style="height: 283px;">
+              <span class="drag ficha" style="top:90px; left:40px;"><div class="ficha1"></div></span>
+              <span class="drag ficha" style="top:180px; left:40px;"><div class="ficha2"></div></span>
+              <span class="drag ficha" style="top:260px; left:40px;"><div class="ficha3"></div></span>
+              
+          </div>
+          <div class="mapa2" style="height: 0;">
+              <div class="mapaP"></div>
+              <div class="mapa"></div>
+          </div>
+          <div class="jungla2">
+              <div class="jungla"></div>
+              <div class="drop1" style="top: -254px; left: 155px;"></div>
+              <div class="drop1" style="top:-249px; left:239px;"></div>
+              <div class="drop1" style="top:-244px; left:322px;"></div>
+          </div>
+          <div class="avance2">
+            <div class="avance"></div>
+            <div class="avanceFinal"></div>
+          </div>
+      </section>
+    <!-- PANTALLA 3 -->
+      <section style="background-color: rgb(68, 128, 151); overflow-y: scroll;">
+          <div class="fichas3">
+              <span class="drag ficha" style="top: 80px; left: 45px; height: 59px; position: relative;"><div class="ficha1"></div></span>
+              <span class="drag ficha" style="top: 110px; left: 45px; height: 59px; position: relative;"><div class="ficha2"></div></span>
+              <span class="drag ficha" style="top: 140px; left: 45px; height: 59px; position: relative;"><div class="ficha3"></div></span>
+              <span class="drag ficha" style="top: 170px; left: 45px; height: 59px; position: relative;"><div class="ficha4"></div></span>
+              <span class="drag ficha" style="top: 200px; left: 45px; height: 59px; position: relative;"><div class="ficha5"></div></span>
+          </div>
+          <div class="mapa3" style="height: 0;">
+              <div class="mapaP"></div>
+              <div class="mapa"></div>
+          </div>
+          <div class="jungla3">
+              <div class="jungla"></div>
+              <div class="drop2" style="top: -138px; left: 157px;"></div>
+              <div class="drop2" style="top: -137px; left: 218px;"></div>
+              <div class="drop2" style="top: -319px; left: 279px;"></div>
+              <div class="drop2" style="top: -440px; left: 337px;"></div>
+              <div class="drop2" style="top: -378px; left: 279px;"></div>
+          </div>
+          <div class="avance3">
+            <div class="avance"></div>
+            <div class="avanceFinal"></div>
+          </div>
+      </section>
+    <!-- PANTALLA 4 -->
+      <section style="background-color: rgb(68, 128, 151); overflow-y: scroll;">
+        <a class="button icon-newtab md-trigger" id="toEndModal"  data-modal="modal-1" style="display: none"></a>
+        <div class="fichas4">
+              <span class="drag ficha" style="top: 60px; left: 45px; height: 48px; position: relative;"><div class="ficha1"></div></span>
+              <span class="drag ficha" style="top: 80px; left: 45px; height: 48px; position: relative;"><div class="ficha2"></div></span>
+              <span class="drag ficha" style="top: 100px; left: 45px; height: 48px; position: relative;"><div class="ficha3"></div></span>
+              <span class="drag ficha" style="top: 120px; left: 45px; height: 48px; position: relative;"><div class="ficha4"></div></span>
+              <span class="drag ficha" style="top: 140px; left: 45px; height: 48px; position: relative;"><div class="ficha5"></div></span>
+              <span class="drag ficha" style="top: 160px; left: 45px; height: 48px; position: relative;"><div class="ficha6"></div></span>
+              <span class="drag ficha" style="top: 180px; left: 45px; height: 48px; position: relative;"><div class="ficha7"></div></span>
+          </div>
+          <div class="mapa4" style="height: 0;">
+              <div class="mapaP"></div>
+              <div class="mapa"></div>
+          </div>
+          <div class="jungla4">
+              <div class="jungla"></div>
+              <div class="drop3" style="top: -205px; left: 151px;"></div>
+              <div class="drop3" style="top: -304px; left: 202px;"></div>
+              <div class="drop3" style="top: -302px; left: 252px;"></div>
+              <div class="drop3" style="top: -299px; left: 252px;"></div>
+              <div class="drop3" style="top: -297px; left: 301px;"></div>
+              <div class="drop3" style="top: -293px; left: 301px;"></div>
+              <div class="drop3" style="top: -341px; left: 349px;"></div>
+          </div>
+          <div class="avance4">
+            <div class="avance"></div>
+            <div class="avanceFinal"></div>
+          </div>
+      </section>
+  </div>
+  <!-- /sectionsContainer -->
+</div>
+<!-- /container -->
+</div>
+<div id="loader" class="pageload-overlay" data-opening="M -18 -26.90625 L -18 86.90625 L 98 86.90625 L 98 -26.90625 L -18 -26.90625 Z M 40 29.96875 C 40.01804 29.96875 40.03125 29.98196 40.03125 30 C 40.03125 30.01804 40.01804 30.03125 40 30.03125 C 39.98196 30.03125 39.96875 30.01804 39.96875 30 C 39.96875 29.98196 39.98196 29.96875 40 29.96875 Z">
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewbox="0 0 80 60" preserveaspectratio="xMidYMid slice">
+<path d="M -18 -26.90625 L -18 86.90625 L 98 86.90625 L 98 -26.90625 L -18 -26.90625 Z M 40 -25.6875 C 70.750092 -25.6875 95.6875 -0.7500919 95.6875 30 C 95.6875 60.750092 70.750092 85.6875 40 85.6875 C 9.2499078 85.6875 -15.6875 60.750092 -15.6875 30 C -15.6875 -0.7500919 9.2499078 -25.6875 40 -25.6875 Z"/>
+</svg>
+</div>
+<!-- /pageload-overlay -->
+<script src="../lib/common/js/classie.js"></script>
+<script src="../lib/common/js/svgLoader.js"></script>
+
+<script>
+       
+      </script>
+<script src="../lib/common/js/jquery.parallax.js"></script>
+<script src="../lib/common/js/modalEffects.js"></script>
+<!-- for the blur effect -->
+<!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+<script>
+      // this is important for IEs
+      var polyfilter_scriptpath = '/js/';
+    </script>
+<script src="../lib/common/js/cssParser.js"></script>
+<script src="../lib/common/js/css-filters-polyfill.js"></script>
+<script src="../lib/resources/js/initial.js"></script>
+<script src="../lib/resources/js/core.js">  </script>
+
+<!-- SCRIPT POR DEFAULT PARA EL DESARROLLO DE ESTE INTERACTIVO, PUEDEN INCLUIRSE MAS SCRIPTS SI HACEN FALTA -->
+<script src="js/script.js"></script>
+<script src="../lib_jsmovie/jquery.jsmovie-1.4.4.js"></script>
+</body>
+</html>
