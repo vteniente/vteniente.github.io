@@ -1,0 +1,538 @@
+/*Pantalla 1*/
+.distraido1{
+	height: 0;
+	position: relative;
+	left: 336px;
+	top: 13px;
+}
+.distraido1 .triste{
+	background: url(../img/pant1/mama_triste.png);
+	width: 291px;
+	height: 404px;
+	position: relative;
+	top: -4px;
+	left: -8px;
+}
+.distraido1 .feliz{
+	background: url(../img/pant1/mama_feliz.png);
+	width: 291px;
+	height: 404px;
+	position: relative;
+	top: -410px;
+	left: -6px;
+	z-index: -1;
+}
+.personaje1{
+	height: 0;
+}
+.personaje1 .persona{
+	position: relative;
+	left: -10px;
+}
+.personaje1 .preocupada{
+	background: url(../img/pant1/tita_preocupada.png);
+	height: 226px;
+	width: 179px;
+	position: relative;
+	z-index: -1;
+	top: -380px;
+	left: 575px;
+}
+.personaje1 .alegre{
+	background: url(../img/pant1/tita_alegre.png);
+	height: 226px;
+	width: 179px;
+	position: relative;
+	z-index: -1;
+	top: -606px;
+	left: 575px;
+}
+.lostfound1{
+	position: relative;
+	top: 233px;
+}
+.lostfound1 .lf1{
+	background: url(../img/pant1/bolsa01.png);
+	width: 425px;
+	height: 197px;
+	position: relative;
+	left: 32px;
+	top: 116px;
+}
+.lostfound1 .lf2{
+	background: url(../img/pant1/bolsa02.png);
+	width: 425px;
+	height: 197px;
+	position: relative;
+	left: 32px;
+	top: -81px;
+	z-index: -1;
+}
+.tutorial{
+	height: 0;
+	position: relative;
+	z-index: 2;
+	top: -5px;
+	left: -7px;
+}
+.tuto{
+	height: 560px;
+	width: 790px;
+}
+/*Pantalla 2*/
+.distraido2{
+	width: 331px;
+	height: 414px;
+	position: relative;
+	left: 0;
+	top: 120px;
+}
+.personaje2{
+	height: 0;
+}
+.personaje2 .tita{
+	position: relative;
+	top: -736px;
+	left: 566px;
+}
+.personaje2 .globo{
+	background: white;
+	width: 74px;
+	height: 32px;
+	z-index: 1;
+	position: relative;
+	top: 47px;
+	left: 50px;
+}
+.personaje2 .iris{
+	background: url(../img/pant2/tita_pupilas.png);
+	height: 21px;
+	width: 62px;
+	position: absolute;
+	top: 11px;
+	left: 4px;
+}
+.personaje2 .triste{
+	background: url(../img/pant2/tita_triste.png);
+	height: 294px;
+	width: 226px;
+	position: relative;
+	z-index: -1;
+	left: -8px;
+	top: -27px;
+}
+.personaje2 .preocupada{
+	background: url(../img/pant2/tita_preocupada.png);
+	height: 294px;
+	width: 226px;
+	position: relative;
+	z-index: -1;
+	top: -321px;
+	left: -8px;
+}
+.personaje2 .alegre{
+	background: url(../img/pant2/tita_alegre.png);
+	height: 294px;
+	width: 226px;
+	position: relative;
+	z-index: -1;
+	top: -615px;
+	left: -8px;
+}
+.personaje2 .entrada{
+	position: relative;
+	top: -414px;
+	left: -15px;
+	z-index: 1;
+}
+.lostfound2{
+	position: relative;
+	top: -500px;
+	left: 300px;
+}
+.lostfound2 .lf1{
+	background: url(../img/pant2/tocador01.png);
+	width: 346px;
+	height: 421px;
+	position: relative;
+	left: 32px;
+	top: 116px;
+}
+.lostfound2 .lf2{
+	background: url(../img/pant2/tocador02.png);
+	width: 346px;
+	height: 421px;
+	position: relative;
+	left: 32px;
+	top: -305px;
+	z-index: -1;
+}
+.lostfound2 .active{
+	position: relative;
+	top: -668px;
+	left: 34px;
+	z-index: -1;
+	height: 144px;
+	width: 345px;
+}
+.lostfound2 .object{
+	height: 55px;
+	width: 80px;
+	position: relative;
+	z-index: -1;
+	left: 201px;
+	top: -587px;
+}
+.finale2{
+	position: relative;
+	top: -1400px;
+	height: 560px;
+	z-index: -1;
+}
+/*Pantalla 3*/
+.bac2{
+	background: url(../img/pant3/back2.png);
+	height: 560px;
+	width: 790px;
+}
+.distraido3{
+	width: 208px;
+	height: 414px;
+	position: relative;
+	left: 347px;
+	top: 120px;
+}
+.distraido3 .triste{
+	background: url(../img/pant3/chefcita_triste.png);
+	height: 312px;
+	width: 195px;
+	position: relative;
+	z-index: 1;
+	left: -63px;
+	top: 69px;
+}
+.distraido3 .alegre{
+	background: url(../img/pant3/chefcita_alegre.png);
+	height: 313px;
+	width: 207px;
+	position: relative;
+	z-index: -1;
+	top: -244px;
+	left: -63px;
+}
+.distraido3 .globo{
+	background: white;
+	width: 74px;
+	height: 29px;
+	z-index: 1;
+	position: relative;
+	top: 209px;
+	left: 24px;
+}
+.distraido3 .iris{
+	background: url(../img/pant3/chefcita_pupilas.png);
+	height: 22px;
+	width: 57px;
+	position: absolute;
+	top: 0;
+	left: 4px;
+}
+.personaje3{
+	height: 0;
+}
+.personaje3 .tita{
+	position: relative;
+	top: -754px;
+	left: 514px;
+}
+.personaje3 .globo{
+	background: white;
+	width: 73px;
+	height: 33px;
+	z-index: 1;
+	position: relative;
+	top: 47px;
+	left: 57px;
+}
+.personaje3 .iris{
+	background: url(../img/pant3/tita_pupilas.png);
+	height: 21px;
+	width: 63px;
+	position: absolute;
+	top: 11px;
+	left: 4px;
+}
+.personaje3 .triste{
+	background: url(../img/pant3/tita_triste.png);
+	height: 301px;
+	width: 226px;
+	position: relative;
+	z-index: -1;
+	left: -8px;
+	top: -25px;
+}
+.personaje3 .preocupada{
+	background: url(../img/pant3/tita_preocupada.png);
+	height: 301px;
+	width: 226px;
+	position: relative;
+	z-index: -1;
+	top: -326px;
+	left: -8px;
+}
+.personaje3 .alegre{
+	background: url(../img/pant3/tita_alegre.png);
+	height: 301px;
+	width: 226px;
+	position: relative;
+	z-index: -1;
+	top: -627px;
+	left: -10px;
+}
+.personaje3 .entrada{
+	position: relative;
+	top: -414px;
+	left: -15px;
+	z-index: 1;
+}
+.lostfound3{
+	position: relative;
+	top: -500px;
+	left: 300px;
+}
+.lostfound3 .lf1{
+	background: url(../img/pant3/llave01.png);
+	width: 164px;
+	height: 79px;
+	position: relative;
+	left: 100px;
+	top: 235px;
+}
+.lostfound3 .lf2{
+	background: url(../img/pant3/llave02.png);
+	width: 164px;
+	height: 79px;
+	position: relative;
+	left: 100px;
+	top: 156px;
+	z-index: -1;
+}
+.lostfound3 .active{
+	position: relative;
+	top: 0;
+	left: -300px;
+	z-index: -1;
+	height: 103px;
+	width: 776px;
+}
+.lostfound3 .object{
+	height: 55px;
+	width: 50px;
+	position: relative;
+	z-index: -1;
+	left: 162px;
+	top: 103px;
+}
+.finale3{
+	position: relative;
+	top: -770px;
+	height: 560px;
+	z-index: -1;
+}
+/*Pantalla 4*/
+.chango1{
+	width: 221px;
+	height: 175px;
+	position: relative;
+	left: 100px;
+	top: 230px;
+}
+.chango2{
+	width: 221px;
+	height: 175px;
+	position: relative;
+	left: 100px;
+	top: 55px;
+	z-index: -1;
+}
+.personaje4{
+	height: 0;
+}
+.personaje4 .tita{
+	position: relative;
+	top: -736px;
+	left: 566px;
+}
+.personaje4 .globo{
+	background: white;
+	width: 63px;
+	height: 26px;
+	z-index: 1;
+	position: relative;
+	top: 432px;
+	left: 62px;
+}
+.personaje4 .iris{
+	background: url(../img/pant4/tita_pupilas.png);
+	height: 17px;
+	width: 51px;
+	position: absolute;
+	top: 11px;
+	left: 4px;
+}
+.personaje4 .triste{
+	background: url(../img/pant4/tita_triste.png);
+	height: 260px;
+	width: 197px;
+	position: relative;
+	z-index: -1;
+	left: 9px;
+	top: 366px;
+}
+.personaje4 .preocupada{
+	background: url(../img/pant4/tita_preocupada.png);
+	height: 260px;
+	width: 197px;
+	position: relative;
+	z-index: -1;
+	top: 106px;
+	left: 9px;
+}
+.personaje4 .alegre{
+	background: url(../img/pant4/tita_alegre.png);
+	height: 260px;
+	width: 197px;
+	position: relative;
+	z-index: -1;
+	top: -154px;
+	left: 9px;
+}
+.personaje4 .entrada{
+	position: relative;
+	top: -0;
+	left: -15px;
+	z-index: 1;
+}
+.lostfound4 .lf1{
+	background: url(../img/pant4/ropero01.png);
+	width: 294px;
+	height: 366px;
+	position: relative;
+	left: 470px;
+	top: 50px;
+}
+.lostfound4 .lf2{
+	background: url(../img/pant4/ropero02.png);
+	width: 294px;
+	height: 366px;
+	position: relative;
+	left: 470px;
+	top: -316px;
+	z-index: -1;
+}
+.lostfound4 .active{
+	position: relative;
+	top: -615px;
+	left: 34px;
+	z-index: -1;
+	height: 144px;
+	width: 345px;
+}
+.lostfound4 .actives{
+	height: 70px;
+	width: 110px;
+	position: relative;
+}
+.lostfound4 .object{
+	height: 106px;
+	width: 80px;
+	position: relative;
+	z-index: -1;
+	left: 509px;
+	top: -480px;
+}
+.finale4{
+	position: relative;
+	top: -881px;
+	height: 560px;
+	z-index: -1;
+}
+/*commons*/
+#scene li:nth-child(1) img{
+position:absolute;
+top: -130px;
+left: -60px !important; 
+
+} 
+
+
+#scene li:nth-child(2){
+position:absolute;
+display:block;
+top: 20px !important;
+left: 78px !important;
+width: 314px;  
+height: 210px;
+} 
+
+
+#scene li:nth-child(3){ 
+position:absolute;
+display:block; 
+
+left: 97px !important;
+top: 30px !important;  
+
+ 
+
+width: 214px;
+height: 210px; 
+
+}
+
+
+ 
+#scene li:nth-child(4){
+    width: 304px;
+height: 190px;
+position:absolute;
+display:block;
+left: 88px !important; 
+top: 40px !important;
+
+}
+
+
+
+#scene li:nth-child(5){
+    width: 304px;
+height: 190px;
+position:absolute;
+display:block;
+left: 298px !important; 
+top: 60px !important;
+
+}
+
+
+#scene li:nth-child(6){
+    width: 304px;
+height: 190px;
+position:absolute;
+display:block;
+left: -18px!important;
+top: 150px !important;
+
+}
+#page-2 section:nth-child(1){ 
+	background:url(../img/pant1/back.jpg)
+}
+#page-2 section:nth-child(2){
+	background:url(../img/pant2/back.jpg)
+}
+#page-2 section:nth-child(3){
+	background:url(../img/pant3/back.jpg)
+}
+#page-2 section:nth-child(4){
+	background:url(../img/pant4/back.jpg)
+}
