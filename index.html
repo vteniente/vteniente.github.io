@@ -12,21 +12,6 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900" type="text/css">
     <link rel="stylesheet" href="css/app.css" type="text/css">
-
-    <script src="https://code.angularjs.org/1.2.16/angular.min.js"></script>
-    <script src="app/app.js"></script>
-
-    <script>
-      if(/github\.io/.test(window.location.hostname)) {
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-55098418-1', 'auto');
-        ga('send', 'pageview');
-      }
-    </script>
   </head>
 
   <body ng-app="Cvitae" ng-controller="CvitaeCtrl">
@@ -34,44 +19,40 @@
       <div class="container">
         <div class="row">
           <div id="avatar-container" class="col-md-3">
-            <img class="avatar" ng-src="{{ cvitae.personalInfo.avatarUrl }}"
+            <img class="avatar" src="css/images/vteniente.jpeg"
               alt="{{ cvitae.personalInfo.fullName }}">
-          </div>
-          <div id="personal-info" class="col-md-9">
-            <h1>{{ cvitae.personalInfo.fullName }}</h1>
-            
-            <h2>
-              {{ cvitae.personalInfo.ocupation }} 
-            </h2>
-              
-            <ul>
-              <li>
-                <i class="fa fa-map-marker circle-icon circle-small"></i> {{ cvitae.experience[0].location }}
-              </li>
-              <li>
-                <a ng-href="http://github.com/{{ cvitae.social.github }}" target="blank">
-                  <i class="fa fa-github circle-icon circle-small"></i>
-                </a>
-              </li>
-              <li>
-                <a ng-href="{{ cvitae.social.linkedIn }}" target="blank">
-                  <i class="fa fa-linkedin circle-icon circle-small"></i>
-                </a>
-              </li>
-              <li>
-                <a ng-href="mailto:{{ cvitae.personalInfo.email }}" target="blank">
-                  <i class="fa fa-envelope circle-icon circle-small"></i>
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
-
       <div id="actions">
-        <a href="https://github.com/vteniente/vteniente.github.io" target="blank" title="View on GitHub">
-          <i class="fa fa-code circle-icon circle-small circle-transparent"></i>
-        </a>
+        <div id="personal-info" class="col-md-12">
+          <h1>{{ cvitae.personalInfo.fullName }}</h1>
+          
+          <h2>
+            {{ cvitae.personalInfo.ocupation }} 
+          </h2>
+            
+          <ul>
+            <li>
+              <i class="fa fa-map-marker circle-icon circle-small"></i> {{ cvitae.experience[0].location }}
+            </li>
+            <li>
+              <a ng-href="http://github.com/{{ cvitae.social.github }}" target="blank">
+                <i class="fa fa-github circle-icon circle-small"></i>
+              </a>
+            </li>
+            <li>
+              <a ng-href="{{ cvitae.social.linkedIn }}" target="blank">
+                <i class="fa fa-linkedin circle-icon circle-small"></i>
+              </a>
+            </li>
+            <li>
+              <a ng-href="mailto:{{ cvitae.personalInfo.email }}" target="blank">
+                <i class="fa fa-envelope circle-icon circle-small"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <div class="container">
@@ -168,5 +149,19 @@
 
       </section>
     </div>
+    <script src="https://code.angularjs.org/1.2.16/angular.min.js"></script>
+    <script src="app/app.js"></script>
+
+    <script>
+      if(/github\.io/.test(window.location.hostname)) {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-55098418-1', 'auto');
+        ga('send', 'pageview');
+      }
+    </script>
   </body>
 </html>

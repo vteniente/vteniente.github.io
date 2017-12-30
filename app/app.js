@@ -5,5 +5,6 @@ angular.module('Cvitae', [])
     $http.get('vteniente.json')
       .success(function (data) {
         $scope.cvitae = data;
+        console.log('data', data);
       });
   }]);
